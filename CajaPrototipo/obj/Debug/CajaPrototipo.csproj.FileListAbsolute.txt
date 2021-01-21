@@ -1,0 +1,11 @@
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\bin\Debug\CajaPrototipo.exe.config
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\bin\Debug\CajaPrototipo.exe
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\bin\Debug\CajaPrototipo.pdb
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.csprojAssemblyReference.cache
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.Form1.resources
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.Properties.Resources.resources
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.csproj.GenerateResource.cache
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.csproj.CoreCompileInputs.cache
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.exe
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.pdb
+C:\Users\arish\OneDrive\Documents\VSProjects\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.Login.resources
