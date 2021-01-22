@@ -39,7 +39,7 @@ namespace CajaPrototipo
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Program.log.Info("Main: Perstamo");
+            Program.log.Info("Main: Prestamo");
 
             Perstamo p = new Perstamo();
             p.Usuario = Usuario;

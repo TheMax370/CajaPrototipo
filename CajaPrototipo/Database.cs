@@ -35,7 +35,7 @@ namespace CajaPrototipo
         {
             using (SqlConnection openCon = new SqlConnection(con))
             {
-                using (SqlCommand command = new SqlCommand("Select * from Obtener_Cliente(@cedula)", openCon))
+                using (SqlCommand command = new SqlCommand("Select * from tblCostumers where Idcard=@cedula", openCon))
                 {
                     Program.log.Info("Databse Query Execution : " + command.CommandText + " - Parameters : " + cedula);
 
@@ -59,11 +59,12 @@ namespace CajaPrototipo
                 }
             }
         }
+
         public static DataTable ObtenerCliente2(string cedula)
         {
             using (SqlConnection openCon = new SqlConnection(con))
             {
-                using (SqlCommand command = new SqlCommand("Select * from tbl_cliente where Cedula=@cedula", openCon))
+                using (SqlCommand command = new SqlCommand("Select * from tblCostumers where Idcard=@cedula", openCon))
                 {
                     Program.log.Info("Databse Query Execution : " + command.CommandText + " - Parameters : " + cedula);
 
@@ -91,7 +92,7 @@ namespace CajaPrototipo
         {
             using (SqlConnection openCon = new SqlConnection(con))
             {
-                using (SqlCommand command = new SqlCommand("SELECT  *  from tbl_cliente WHERE numero_de_cuenta = '" + numero_de_cuenta + "'", openCon))
+                using (SqlCommand command = new SqlCommand("SELECT  *  from tblCostumers WHERE AccountNum = '" + numero_de_cuenta + "'", openCon))
                 {
 
                     Program.log.Info("Databse Query Execution : " + command.CommandText);
@@ -102,7 +103,7 @@ namespace CajaPrototipo
                     SqlDataReader reader = command.ExecuteReader();
                     while (reader.Read())
                     {
-                        System.Decimal monto = (decimal)reader.GetSqlMoney(reader.GetOrdinal("Monto"));
+                        System.Decimal monto = (decimal)reader.GetSqlMoney(reader.GetOrdinal("Mount"));
 
                         return monto;
 
@@ -224,7 +225,7 @@ namespace CajaPrototipo
         {
             using (SqlConnection openCon = new SqlConnection(con))
             {
-                using (SqlCommand command = new SqlCommand("Select * from tbl_cliente where numero_de_cuenta=@numero_de_cuenta", openCon))
+                using (SqlCommand command = new SqlCommand("Select * from tblCostumers where AccountNum=@numero_de_cuenta", openCon))
                 {
                     command.Parameters.AddWithValue("@numero_de_cuenta", numero_de_cuenta);
 
@@ -325,7 +326,7 @@ namespace CajaPrototipo
         {
             using (SqlConnection openCon = new SqlConnection(con))
             {
-                using (SqlCommand command = new SqlCommand("insert into tbl_Transaccion(numero_de_cuenta,transaccion,monto,date) values (@numero_de_cuenta,@transaccion ,@monto ,@date)", openCon))
+                using (SqlCommand command = new SqlCommand("insert into tblTransactions(AccountNum,TransactType,TransactMount,TransactDate) values (@numero_de_cuenta,@transaccion ,@monto ,@date)", openCon))
                 {
                     command.Parameters.AddWithValue("@numero_de_cuenta", numero_de_cuenta);
                     command.Parameters.AddWithValue("@transaccion", transaccion);
@@ -348,7 +349,7 @@ namespace CajaPrototipo
         {
             using (SqlConnection openCon = new SqlConnection(con))
             {
-                string query = "UPDATE tbl_cliente SET Monto =" + monto + " Where numero_de_cuenta ='" + numero_de_cuenta + "'";
+                string query = "UPDATE tblCostumers SET Mount =" + monto + " Where AccountNum ='" + numero_de_cuenta + "'";
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 
@@ -373,7 +374,7 @@ namespace CajaPrototipo
         {
             using (SqlConnection openCon = new SqlConnection(con))
             {
-                using (SqlCommand command = new SqlCommand("Select * from tbl_empleado where usuario=@usuario", openCon))
+                using (SqlCommand command = new SqlCommand("Select * from tblUsers where Username=@usuario", openCon))
                 {
                     command.Parameters.AddWithValue("@usuario", usuario);
 
@@ -399,7 +400,7 @@ namespace CajaPrototipo
         {
             using (SqlConnection openCon = new SqlConnection(con))
             {
-                using (SqlCommand command = new SqlCommand("Select * from tbl_cliente where numero_de_cuenta=@numero_de_cuenta", openCon))
+                using (SqlCommand command = new SqlCommand("Select * from tblCostumers where AccountNum=@numero_de_cuenta", openCon))
                 {
                     command.Parameters.AddWithValue("@numero_de_cuenta", numero_de_cuenta);
 

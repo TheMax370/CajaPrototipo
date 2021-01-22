@@ -60,9 +60,17 @@ namespace CajaPrototipo
                                         "----------------------\n" +
                                         "Gracias por usar cajero automático";
 
+
+                MessageBox.Show(Usuario, "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
                 string toEmail = Database.getEmail(Usuario);
 
+                MessageBox.Show(toEmail, "", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+
                 SendReceipt.Send_Email(toEmail, mail);
+
+
 
                 this.Hide();
 

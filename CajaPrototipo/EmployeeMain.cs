@@ -23,7 +23,7 @@ namespace CajaPrototipo
         {
             Program.log.Info("Search Account: Search Account Form");
 
-            lbl_name.Text = "Bienvenidos " + Database.ObtenerNombreDeUsuario(Usuario);
+            lbl_name.Text = "Bienvenido " + Database.ObtenerNombreDeUsuario(Usuario);
         }
 
         private void plazaTransBtn_Click(object sender, EventArgs e)
@@ -52,6 +52,11 @@ namespace CajaPrototipo
             ClientReport cr = new ClientReport();
             this.disp_panel.Controls.Clear();
             this.disp_panel.Controls.Add(cr.panel1);
+        }
+
+        private void lbl_name_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

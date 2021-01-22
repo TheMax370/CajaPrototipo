@@ -30,13 +30,8 @@ namespace CajaPrototipo
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numerodecuentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.transaccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.montoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblTransaccionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.databaseDataSet2 = new CajaPrototipo.DatabaseDataSet2();
             this.tblTransaccionBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -45,71 +40,49 @@ namespace CajaPrototipo
             this.tbl_TransaccionTableAdapter = new CajaPrototipo.DatabaseDataSetTableAdapters.tbl_TransaccionTableAdapter();
             this.tbl_TransaccionTableAdapter1 = new CajaPrototipo.DatabaseDataSet2TableAdapters.tbl_TransaccionTableAdapter();
             this.disp_panel = new System.Windows.Forms.Panel();
+            this.databaseDataSet5 = new CajaPrototipo.DatabaseDataSet5();
+            this.tblTransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblTransactionsTableAdapter = new CajaPrototipo.DatabaseDataSet5TableAdapters.tblTransactionsTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TransactType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TransactDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TransactMount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AccountNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblTransaccionBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblTransaccionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.disp_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblTransactionsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.GhostWhite;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 28;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
-            this.numerodecuentaDataGridViewTextBoxColumn,
-            this.transaccionDataGridViewTextBoxColumn,
-            this.montoDataGridViewTextBoxColumn,
-            this.dateDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblTransaccionBindingSource1;
+            this.TransactType,
+            this.TransactDate,
+            this.TransactMount,
+            this.AccountNum});
+            this.dataGridView1.DataSource = this.tblTransactionsBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(3, 48);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(562, 313);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // numerodecuentaDataGridViewTextBoxColumn
-            // 
-            this.numerodecuentaDataGridViewTextBoxColumn.DataPropertyName = "numero_de_cuenta";
-            this.numerodecuentaDataGridViewTextBoxColumn.HeaderText = "numero_de_cuenta";
-            this.numerodecuentaDataGridViewTextBoxColumn.Name = "numerodecuentaDataGridViewTextBoxColumn";
-            this.numerodecuentaDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // transaccionDataGridViewTextBoxColumn
-            // 
-            this.transaccionDataGridViewTextBoxColumn.DataPropertyName = "transaccion";
-            this.transaccionDataGridViewTextBoxColumn.HeaderText = "transaccion";
-            this.transaccionDataGridViewTextBoxColumn.Name = "transaccionDataGridViewTextBoxColumn";
-            // 
-            // montoDataGridViewTextBoxColumn
-            // 
-            this.montoDataGridViewTextBoxColumn.DataPropertyName = "monto";
-            this.montoDataGridViewTextBoxColumn.HeaderText = "monto";
-            this.montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "date";
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
             // 
             // tblTransaccionBindingSource1
             // 
@@ -138,9 +111,9 @@ namespace CajaPrototipo
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 36);
+            this.label3.Size = new System.Drawing.Size(218, 36);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Transaccines";
+            this.label3.Text = "Transacciones";
             // 
             // tbl_TransaccionTableAdapter
             // 
@@ -160,7 +133,52 @@ namespace CajaPrototipo
             this.disp_panel.Size = new System.Drawing.Size(606, 414);
             this.disp_panel.TabIndex = 11;
             // 
-            // Transaccións
+            // databaseDataSet5
+            // 
+            this.databaseDataSet5.DataSetName = "DatabaseDataSet5";
+            this.databaseDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblTransactionsBindingSource
+            // 
+            this.tblTransactionsBindingSource.DataMember = "tblTransactions";
+            this.tblTransactionsBindingSource.DataSource = this.databaseDataSet5;
+            // 
+            // tblTransactionsTableAdapter
+            // 
+            this.tblTransactionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // TransactType
+            // 
+            this.TransactType.DataPropertyName = "TransactType";
+            this.TransactType.HeaderText = "TransactType";
+            this.TransactType.Name = "TransactType";
+            // 
+            // TransactDate
+            // 
+            this.TransactDate.DataPropertyName = "TransactDate";
+            this.TransactDate.HeaderText = "TransactDate";
+            this.TransactDate.Name = "TransactDate";
+            // 
+            // TransactMount
+            // 
+            this.TransactMount.DataPropertyName = "TransactMount";
+            this.TransactMount.HeaderText = "TransactMount";
+            this.TransactMount.Name = "TransactMount";
+            // 
+            // AccountNum
+            // 
+            this.AccountNum.DataPropertyName = "AccountNum";
+            this.AccountNum.HeaderText = "AccountNum";
+            this.AccountNum.Name = "AccountNum";
+            // 
+            // Transacciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -169,7 +187,7 @@ namespace CajaPrototipo
             this.Controls.Add(this.disp_panel);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Transaccións";
+            this.Name = "Transacciones";
             this.Text = "Transaaccines";
             this.Load += new System.EventHandler(this.Transaccións_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -179,6 +197,8 @@ namespace CajaPrototipo
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             this.disp_panel.ResumeLayout(false);
             this.disp_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblTransactionsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,11 +212,14 @@ namespace CajaPrototipo
         private DatabaseDataSet2 databaseDataSet2;
         private System.Windows.Forms.BindingSource tblTransaccionBindingSource1;
         private DatabaseDataSet2TableAdapters.tbl_TransaccionTableAdapter tbl_TransaccionTableAdapter1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numerodecuentaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn transaccionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn montoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
         public System.Windows.Forms.Panel disp_panel;
+        private DatabaseDataSet5 databaseDataSet5;
+        private System.Windows.Forms.BindingSource tblTransactionsBindingSource;
+        private DatabaseDataSet5TableAdapters.tblTransactionsTableAdapter tblTransactionsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TransactType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TransactDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TransactMount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AccountNum;
     }
 }

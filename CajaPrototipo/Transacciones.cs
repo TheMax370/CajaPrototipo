@@ -23,7 +23,7 @@ namespace CajaPrototipo
         {
             Program.log.Info("Transaccions : Display All Transactions " );
 
-            this.tbl_TransaccionTableAdapter1.Fill(this.databaseDataSet2.tbl_Transaccion);
+            this.tblTransactionsTableAdapter.Fill(this.databaseDataSet5.tblTransactions);
 
         }
 
@@ -34,6 +34,8 @@ namespace CajaPrototipo
 
         private void Transaccións_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'databaseDataSet5.tblTransactions' table. You can move, or remove it, as needed.
+
 
         }
     }

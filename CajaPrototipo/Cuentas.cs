@@ -36,7 +36,7 @@ namespace CajaPrototipo
         {
             int rowNo = dataGridView1.CurrentCell.RowIndex;
 
-            string AccNo = (string) dataGridView1.Rows[rowNo].Cells[0].Value;
+            string AccNo = dataGridView1.Rows[rowNo].Cells[4].Value.ToString();
 
             Program.log.Info("Accounts: Selected Account Number = "+AccNo);
 
@@ -44,6 +44,11 @@ namespace CajaPrototipo
             Main main = new Main();
             main.Usuario = AccNo;
             main.ShowDialog();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

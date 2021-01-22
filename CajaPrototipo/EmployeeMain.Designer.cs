@@ -60,6 +60,7 @@ namespace CajaPrototipo
             this.lbl_name.Size = new System.Drawing.Size(454, 33);
             this.lbl_name.TabIndex = 4;
             this.lbl_name.Text = "Bienvenido First Name Last Name";
+            this.lbl_name.Click += new System.EventHandler(this.lbl_name_Click);
             // 
             // pictureBox2
             // 

@@ -419,10 +419,12 @@ C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.Proper
 C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.Recibo.resources
 C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.RetirarDeLaCuenta.resources
 C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.Retiro.resources
-C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.Transaccións.resources
-C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.BuscarCédula.resources
 C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\Cajero.csproj.GenerateResource.cache
 C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\Cajero.csproj.CoreCompileInputs.cache
 C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\Cajero.csproj.CopyComplete
 C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.exe
 C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.pdb
+C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.Transacciones.resources
+C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\CajaPrototipo.BuscarCedula.resources
+C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\RdlCompile.cache
+C:\Users\Alan\Desktop\CajaPrototipo\CajaPrototipo\obj\Debug\RdlCompile.compiled
